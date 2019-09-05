@@ -1,0 +1,7 @@
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe.config
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csprojAssemblyReference.cache
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.CoreCompileInputs.cache
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
+C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
