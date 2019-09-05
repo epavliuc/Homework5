@@ -18,7 +18,8 @@ namespace DatabaseProject
             Game game2 = new Game("Testing", "Mobile Game", "Simple Game", "Average");
 
             //Insert.addValuetoDB(game2, conn);
-            Delete.deleteValueDB("Space Invaders", conn);
+            //Delete.deleteValueDB("Space Invaders", conn);
+            Update.updateValueDB("xbox game","Testing",conn);
         }
 
     }
@@ -59,6 +60,28 @@ namespace DatabaseProject
             catch (SqlException ex)
             {
                 Console.WriteLine("Problem with connection" + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
+
+    class Update
+    {
+        public static void updateValueDB(string newData,string where, SqlConnection connection)
+        {
+            string updateString = String.Format("UPDATE Game SET game = '{0}' WHERE name = '{1}'", newData,where);
+            try
+            {
+                connection.Open();
+                SqlCommand deleteCommand = new SqlCommand(updateString, connection);
+                deleteCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Problem with connection: " + ex.Message);
             }
             finally
             {
