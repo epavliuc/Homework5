@@ -5,3 +5,12 @@ C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject
 C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.csproj.CoreCompileInputs.cache
 C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.exe
 C:\Users\Eduard Pavliuc\Engineering40\Week4\Day4\DatabaseProject\DatabaseProject\obj\Debug\DatabaseProject.pdb
+D:\VisualStudio\Homework5\DatabaseProject\bin\Debug\CSharpGame.mdf
+D:\VisualStudio\Homework5\DatabaseProject\bin\Debug\CSharpGame_log.ldf
+D:\VisualStudio\Homework5\DatabaseProject\bin\Debug\DatabaseProject.exe.config
+D:\VisualStudio\Homework5\DatabaseProject\bin\Debug\DatabaseProject.exe
+D:\VisualStudio\Homework5\DatabaseProject\bin\Debug\DatabaseProject.pdb
+D:\VisualStudio\Homework5\DatabaseProject\obj\Debug\DatabaseProject.csprojAssemblyReference.cache
+D:\VisualStudio\Homework5\DatabaseProject\obj\Debug\DatabaseProject.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Homework5\DatabaseProject\obj\Debug\DatabaseProject.exe
+D:\VisualStudio\Homework5\DatabaseProject\obj\Debug\DatabaseProject.pdb

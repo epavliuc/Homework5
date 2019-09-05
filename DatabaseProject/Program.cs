@@ -11,31 +11,61 @@ namespace DatabaseProject
     {
         static void Main(string[] args)
         {
-            string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = CSharpGame; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
-            
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\VisualStudio\\Homework5\\DatabaseProject\\CSharpGame.mdf;Integrated Security=True";
+
             SqlConnection conn = new SqlConnection(connectionString);
-            Game game1 = new Game("Tetris", "Mobile Game", "Simple Game", "Average");
-            string insertString = String.Format("INSERT INTO Game(name,game,type_of_game,review) VALUES('{0}','{1}','{2}','{3}')", game1.Name, game1.Genre, game1.Type, game1.Review);
-            
+            Game game1 = new Game("Space Invaders", "Mobile Game", "Simple Game", "Average");
+            Game game2 = new Game("Testing", "Mobile Game", "Simple Game", "Average");
+
+            Insert.addValuetoDB(game2, conn);
+        }
+
+    }
+
+    class Insert
+    {
+        public static void addValuetoDB(Game go,SqlConnection connection)
+        {
+            string insertString = String.Format("INSERT INTO Game(name,game,type_of_game,review) VALUES('{0}','{1}','{2}','{3}')", go.Name, go.Genre, go.Type, go.Review);
             try
             {
-                conn.Open();
-                SqlCommand insertCommand = new SqlCommand(insertString,conn);
-                
+                connection.Open();
+                SqlCommand insertCommand = new SqlCommand(insertString, connection);
                 insertCommand.ExecuteReader();
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 Console.WriteLine("Problem with connection" + ex.Message);
             }
             finally
             {
-                conn.Close();
+                connection.Close();
             }
-
-            //SqlCommand selectCommand = new SqlCommand("SELECT * FROM game");
         }
     }
+
+    class Delete
+    {
+        public static void deleteValueDB(string game,SqlConnection connection)
+        {
+            string deleteString = String.Format("DELETE FROM Game WHERE name='{0}'", game);
+            try
+            {
+                connection.Open();
+                SqlCommand deleteCommand = new SqlCommand(deleteString, connection);
+                deleteCommand.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Problem with connection" + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
+    
 
     class Game
     {
