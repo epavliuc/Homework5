@@ -17,7 +17,8 @@ namespace DatabaseProject
             Game game1 = new Game("Space Invaders", "Mobile Game", "Simple Game", "Average");
             Game game2 = new Game("Testing", "Mobile Game", "Simple Game", "Average");
 
-            Insert.addValuetoDB(game2, conn);
+            //Insert.addValuetoDB(game2, conn);
+            Delete.deleteValueDB("Space Invaders", conn);
         }
 
     }
